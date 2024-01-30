@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
@@ -10,8 +11,9 @@ body, html {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 200px 600px;
-  grid-template-rows: 100px 300px 100px 100px;
+  grid-template-rows: 100px 100px 500px 100px;
   gap: 15px;
+
 }
 
 .container div {
@@ -24,19 +26,28 @@ body, html {
 }
 
 .header {
-  background-color: #FFDE22;
+  background-color: #006157;
+  grid-column: span 3;
 }
 
 .sidebar {
-  background-color: #FF7755;
+  background-color: #005B94;
+  grid-row: 2 / span 2;
 }
 
 .nav {
-  background-color: #00DDFF;
+  background-color: #642cde;
+  grid-column: 2 / 4;
 }
 
 .article {
-  background-color: #bccbde;
+  background-color: #7E1DC3;
+  grid-column: 2 / 4;
+}
+
+.footer {
+  background-color: #393f4d;
+  grid-column: span 3;
 }
 
 .article p {
@@ -44,8 +55,4 @@ body, html {
   font-family: sans-serif;
   color: white;
   text-align: left;
-}
-
-.footer {
-  background-color: #393f4d;
 }
